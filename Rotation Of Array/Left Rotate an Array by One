@@ -1,0 +1,22 @@
+#include <bits/stdc++.h> 
+vector<int> rotateArray(vector<int>& arr, int n) {
+    // Write your code here.
+    int temp = arr[0]; // taking first element
+
+
+    for(int i = 1; i < n ; i++){ 
+        arr[i-1] = arr[i]; // placing the elements in 1 previous position or shifting the elements by 1 place
+    }
+
+    arr[n-1] = temp; // it sends the first element at the last place
+
+    // for(auto it: arr){
+    //     return it;
+    // }
+    return arr;
+
+
+
+
+
+}
